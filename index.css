@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* coming soon */
+.site-nav-link-style p {
+    font-size: .5em;
+    text-align: center;
+}
+
+.site-wrapper {
+    width: 100%;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr auto minmax(400px, auto) 1fr;
+}
+
+.site-head {
+    width: 100%;
+    height:100px;
+    background-color: black;
+}
+
+/* desktop */
+
+.site-nav {
+    /* border: 2px solid green; */
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 100%;
+    height:60px;
+    margin-bottom: 180px;
+}
+
+.site-nav-links {
+    width:30%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.site-nav-link-style {
+    margin-top: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 1.7em;
+}
+
+.sport-nav {
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 220px;
+    height: 50%;
+    margin: 0 auto;
+}
+
+.sport-nav :nth-child(1) {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.sport-nav a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: black;
+    line-height: 1.5;
+}
+
+.odds-btn {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-style {
+    margin: 5px;
+    width: 100px;
+    height: 28px;
+    padding: 3px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+
+}
+
+/* card */
+
+
